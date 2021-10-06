@@ -3,7 +3,7 @@ var x = document.getElementsByClassName("title");
     {
         x[i].innerText = "New Title!";
     }
-    document.getElementById("bossy").style.fontWeight = 'normal';
+document.getElementById("bossy").innerText = 'lessbossy';
 document.getElementById("blue-li").style.color = 'blue';
 document.getElementById("cream-li").style.backgroundColor = 'Moccasin';
 document.body.style.backgroundColor = 'grey';

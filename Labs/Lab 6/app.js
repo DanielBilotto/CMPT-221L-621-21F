@@ -1,3 +1,4 @@
+const { name } = require('ejs');
 let express = require('express');
 let app = express();
 app.set('view engine', 'ejs');
@@ -7,11 +8,23 @@ app.use(express.urlencoded({extended: true}));
 let port = 3000;
 
 
+
 app.get("/", function(req, res) {
     var names = ["A", "B", "C", "D", "E", "F"]
     var number = getRandomInt(5);
     res.render("index", {name: names[number]});
 });
+
+
+app.get("/run", function (req, res) {
+    res.send("pain this is pain");
+})
+
+
+app.post("/run", function(req, res) {
+    console.log(req.body);
+    res.redirect('/run');
+})
 
 app.post("/login", function(req, res) {
     console.log(req.body.login);

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
+import {Link} from 'react-router-dom'
 import './styleAbout.css';
 
 const About = () => {
@@ -68,7 +69,7 @@ const About = () => {
             onChange={onInputChange}/>
 
         </Form.Group>
-        <button class="send" variant="primary" type="submit"> Submit</button>
+        <button class="send" variant="primary" type="submit">Submit <Link to="/Submit">!</Link></button>
       </form>
     </div>
   );

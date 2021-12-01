@@ -37,12 +37,12 @@ const Challenge = ({trial, onDelete, onToggle}) => {
             onClick = {() => onDelete(trial.id)}/>
             </h3>
             <div id = "myProgress">
-            <ProgressBar animated now ={trial.progress} />
-            </div>
-                
-                <p>{trial.progress}%</p>
-                
-            </div>
+           <ProgressBar animated now ={trial.progress} />
+           </div>
+         
+             <p>{trial.progress}%</p>
+       
+         </div>
     )
 }
 

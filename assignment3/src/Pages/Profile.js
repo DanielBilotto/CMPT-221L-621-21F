@@ -1,9 +1,10 @@
 import React from "react";
+import Profilepage from "../Components/Profile/profilepage"
 
 function Profile() {
     return(
         <div className='Profile'>
-            Your profile here
+            <Profilepage/>
         </div>
     )
 }

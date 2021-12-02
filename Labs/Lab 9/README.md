@@ -17,3 +17,5 @@ MongoDB server (cloud) That holds anything that needs to be in a database
 the mongodatabase will be connected to the static web stuff along with nodejs/express and any APIs
 
 this then gets connected to Angularjs or react which are front end things and that will be the UI that the internet/user sees.
+
+also consider using mongoose to interact with the mongodb database and ypu could use ejs to embed javascript
